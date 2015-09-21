@@ -22,7 +22,6 @@ define('knockout.dirtytracker', ['knockout'], (function (ko) {
             }
             if (vm[prop].isDirtyTracked) {
               if (prop !== "isDirty") {
-                console.log("Tracked: " + prop);
                 vm[prop].subscribe(function (newValue) {
                   vm.isDirty(true);
                 });
