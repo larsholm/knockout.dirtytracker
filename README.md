@@ -2,7 +2,7 @@
 Adds a single isDirty flag to the viewmodel, that by default subscribes to all non-computed observables <b>automatically</b>.<br />
 
 When dirtyTracker.track is called on a viewmodel an  observable is added:<pre>vm.isDirty()</pre><br />
-The flag is set to true if <emf>any</emf> observable property of the viewmodel is changed.<br />
+The flag is set to true if <b>any</b> observable property of the viewmodel is changed.<br />
 If an observable in the viewmodel should not be tracked, use <pre>ko.observable().extend({ dirtyTracked: false });</pre><br />
 If a computed observable in the viewmodel should be tracked, use <pre>ko.observable().extend({ dirtyTracked: true });</pre><br />
 The dirty flag itself is not tracked, so it can be manually be set: <pre>vm.isDirty(false)</pre><br />
