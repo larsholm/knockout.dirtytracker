@@ -1,4 +1,6 @@
 # knockout.dirtytracker
+<h4>Automatic isDirty flag for KnockoutJS viewmodels</h4>
+
 Adds a single isDirty flag to the viewmodel, that by default subscribes to all non-computed observables <b>automatically</b>.<br />
 
 When dirtyTracker.track is called on a viewmodel an  observable is added:<pre>vm.isDirty()</pre><br />
